@@ -1,0 +1,57 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0047bb; /* Городской синий цвет */
+    padding: 15px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo h1 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navLinks {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .navLinks a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .navLinks a:hover {
+    color: #ffdb00; /* Желтый акцент */
+  }
+  
+  .burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .burger span {
+    background-color: white;
+    height: 3px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .navLinks {
+      display: none;
+    }
+  
+    .burger {
+      display: flex;
+    }
+  }
+  
